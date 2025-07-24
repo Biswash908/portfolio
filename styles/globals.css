@@ -11,6 +11,7 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-inter);
+    overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
   }
 
   body {
@@ -34,8 +35,7 @@
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    background:
-      radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.25) 0%, transparent 40%),
+    background: radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.25) 0%, transparent 40%),
       radial-gradient(circle at top right, rgba(216, 180, 254, 0.25) 0%, transparent 40%);
   }
 
@@ -59,8 +59,7 @@
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    background:
-      radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.15) 0%, transparent 40%),
+    background: radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.15) 0%, transparent 40%),
       radial-gradient(circle at top right, rgba(216, 180, 254, 0.15) 0%, transparent 40%),
       linear-gradient(to top right, #1e293b 0%, #94a3b8 100%);
   }
