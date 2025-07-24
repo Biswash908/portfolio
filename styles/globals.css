@@ -11,13 +11,14 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-inter);
-    overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
 
   body {
     @apply transition-all duration-300;
     background: #f7f9fc; /* slightly off-white so white cards stand out */
     color: #111827; /* darker text for readability in light mode */
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
 
   input,
@@ -35,7 +36,8 @@
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    background: radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.25) 0%, transparent 40%),
+    background:
+      radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.25) 0%, transparent 40%),
       radial-gradient(circle at top right, rgba(216, 180, 254, 0.25) 0%, transparent 40%);
   }
 
@@ -59,7 +61,8 @@
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    background: radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.15) 0%, transparent 40%),
+    background:
+      radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.15) 0%, transparent 40%),
       radial-gradient(circle at top right, rgba(216, 180, 254, 0.15) 0%, transparent 40%),
       linear-gradient(to top right, #1e293b 0%, #94a3b8 100%);
   }
